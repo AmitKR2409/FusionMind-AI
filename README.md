@@ -1,10 +1,10 @@
-# 🤖 FusionMind AI – Intelligent RAG Agent
+# FusionMind AI – Intelligent RAG Agent
 
 FusionMind AI is an intelligent chatbot system that combines **Retrieval-Augmented Generation (RAG)** with **web search**, allowing it to answer user queries using both **uploaded PDFs** and **live internet information**. It provides accurate, context-aware, and traceable responses through an interactive Streamlit interface.
 
 ---
 
-## ⭐ Main Objective
+## Main Objective
 
 The primary goal of FusionMind AI is to build an **AI assistant capable of understanding user queries and responding using two knowledge sources**:
 
@@ -15,7 +15,7 @@ The agent intelligently decides **how to answer**, ensuring the most relevant, t
 
 ---
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 
 FusionMind AI aims to solve a common problem:
 
@@ -38,7 +38,7 @@ It can be used for:
 
 ---
 
-## 📌 About the Project
+## About the Project
 
 FusionMind AI consists of a **FastAPI backend** and a **Streamlit frontend**, connected to a vector database for RAG.  
 
@@ -56,43 +56,43 @@ The system workflow:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🔍 PDF Knowledge Base (RAG)
+### PDF Knowledge Base (RAG)
 - Upload PDF documents  
 - Automatic text extraction and chunking  
 - Semantic search through vector embeddings  
 - Answers grounded in your documents  
 
-### 🌐 Optional Web Search
+### Optional Web Search
 - If PDF data is insufficient, the agent retrieves real-time information from the internet  
 - Can be toggled ON/OFF  
 
-### 🧠 Intelligent Routing  
+### Intelligent Routing  
 The agent decides:
 - **RAG first** when document knowledge is available  
 - **Web search** only when necessary  
 - **Direct answer** for simple questions  
 - **End** for greetings or small talk  
 
-### 💬 Chat Interface
+### Chat Interface
 - Clean and modern Streamlit UI  
 - Interactive chat messages  
 - Document upload panel  
 - Agent settings panel  
 
-### 🔬 Workflow Trace Visualization
+### Workflow Trace Visualization
 - Shows each step: routing → RAG → web search → final answer  
 - Displays how decisions were made  
 - Helps debug and understand agent behavior  
 
 ---
 
-## 🔗 APIs & Services Used in This Project
+## APIs & Services Used in This Project
 
 FusionMind AI integrates multiple modern AI APIs and cloud services:
 
-### 🧠 **Groq API**
+### **Groq API**
 Used for:
 - Running LLMs  
 - Routing decisions (router)  
@@ -103,7 +103,7 @@ Groq provides extremely fast inference for LLaMA models.
 
 ---
 
-### 📚 **Pinecone Vector Database**
+### **Pinecone Vector Database**
 Used for:
 - Storing document embeddings  
 - Retrieving top semantic chunks during RAG  
@@ -112,7 +112,7 @@ Pinecone enables high-speed, scalable vector search.
 
 ---
 
-### 🌐 **Tavily Web Search API**
+### **Tavily Web Search API**
 Used for:
 - Real-time internet search when RAG does not have enough information  
 
@@ -120,7 +120,7 @@ Provides reliable, structured web search results.
 
 ---
 
-### ⚡ **FastAPI Backend**
+### **FastAPI Backend**
 Used for:
 - Handling chat requests  
 - Uploading & processing PDFs  
@@ -137,7 +137,7 @@ Endpoints:
 
 ---
 
-### 🎨 **Streamlit Frontend**
+### **Streamlit Frontend**
 Used for:
 - Chat interface  
 - PDF uploader  
