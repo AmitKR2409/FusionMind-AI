@@ -1,11 +1,11 @@
 import os
 from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
-from langchain_huggingface import HuggingFaceEmbeddings # Changed to HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings # Changed to HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Import API keys from config (only Pinecone is needed here now)
-from config import PINECONE_API_KEY
+from .config import PINECONE_API_KEY
 
 # Set environment variables for Pinecone
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
